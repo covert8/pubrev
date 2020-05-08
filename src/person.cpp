@@ -7,3 +7,10 @@
 //
 
 #include "person.hpp"
+
+class Person {
+	int id;
+	
+public:
+	Person();
+};
