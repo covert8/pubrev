@@ -15,6 +15,11 @@ private:
 public:
 	std::string firstName;
 	std::string lastName;
+	Person(std::string fName, std::string lName)
+	{
+		firstName = fName;
+		lastName = lName;
+	};
 };
 
 class Article {
@@ -22,6 +27,7 @@ private:
 	int id;
 public:
 	std::string title;
+	Article();
 };
 
 class Review {
@@ -30,12 +36,15 @@ private:
 public:
 	Person reviewer;
 	Article article;
+	Review();
 };
 
 
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
-	Person testPerson;
+	Person testPerson("Tristan", "Vandevelde");
+	std::cout << testPerson.firstName;
+	std::cout <<"\n";
     return 0;
 }
