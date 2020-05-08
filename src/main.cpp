@@ -17,6 +17,21 @@ public:
 	std::string lastName;
 };
 
+class Article {
+private:
+	int id;
+public:
+	std::string title;
+};
+
+class Review {
+private:
+	int id;
+public:
+	Person reviewer;
+	Article article;
+};
+
 
 int main(int argc, const char * argv[]) {
     // insert code here...
