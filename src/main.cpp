@@ -34,8 +34,8 @@ class Review {
 private:
 	int id;
 public:
-	Person reviewer;
-	Article article;
+	std::shared_ptr<Person> reviewer;
+	std::shared_ptr<Article> article;
 	Review();
 };
 
